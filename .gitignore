@@ -1,0 +1,16 @@
+# Runtime state (per-tty json / pid / log written by hook + daemon)
+state/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo

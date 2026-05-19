@@ -1,0 +1,76 @@
+{
+  "_comment": "Edit this file to customize the title. Daemon reloads on every frame, no restart needed.",
+
+  "frame_interval": 0.12,
+  "idle_frame_interval": 0.6,
+  "stale_after_seconds": 300,
+
+  "_state_intervals_doc": "per-state override; if a state isn't listed, falls back to frame_interval (tool/thinking/compacting) or idle_frame_interval (idle/asking)",
+  "state_intervals": {
+    "asking": 0.4
+  },
+
+  "title_format": "[{project}] {anim} {body}",
+  "tool_body_format_with_target": "{icon} {target}",
+  "tool_body_format_no_target":   "{icon} {tool}",
+  "max_target_length": 48,
+
+  "animations": {
+    "tool":       "arc",
+    "thinking":   "dots2",
+    "asking":     "blink_question",
+    "compacting": "wave",
+    "idle":       "circle"
+  },
+
+  "labels": {
+    "thinking":   "thinking",
+    "asking":     "waiting for you",
+    "compacting": "compacting"
+  },
+
+  "frame_banks": {
+    "spinner":   ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"],
+    "dots2":     ["⣾", "⣽", "⣻", "⢿", "⡿", "⣟", "⣯", "⣷"],
+    "dots3":     ["⠋", "⠙", "⠚", "⠞", "⠖", "⠦", "⠴", "⠲", "⠳", "⠓"],
+    "dots4":     ["⠄", "⠆", "⠇", "⠋", "⠙", "⠸", "⠰", "⠠", "⠰", "⠸", "⠙", "⠋", "⠇", "⠆"],
+    "dots5":     ["⠋", "⠙", "⠚", "⠒", "⠂", "⠂", "⠒", "⠲", "⠴", "⠦", "⠖", "⠒", "⠐", "⠐", "⠒", "⠓", "⠋"],
+    "dots6":     ["⢄", "⢂", "⢁", "⡁", "⡈", "⡐", "⡠"],
+    "line":      ["-", "\\", "|", "/"],
+    "line2":     ["⠂", "-", "–", "—", "–", "-"],
+    "pipe":      ["┤", "┘", "┴", "└", "├", "┌", "┬", "┐"],
+    "triangle":  ["◢", "◣", "◤", "◥"],
+    "square":    ["◰", "◳", "◲", "◱"],
+    "arc":       ["◜", "◠", "◝", "◞", "◡", "◟"],
+    "circle":    ["◐", "◓", "◑", "◒"],
+    "corners":   ["▖", "▘", "▝", "▗"],
+    "halfblock": ["▌", "▀", "▐", "▄"],
+    "trigram":   ["☱", "☲", "☴", "☷", "☳", "☵", "☶", "☰"],
+    "wave":      ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█", "▇", "▆", "▅", "▄", "▃", "▂"],
+    "pulse":     ["◐", "◓", "◑", "◒"],
+    "arrow":     ["▶  ", "▶▶ ", "▶▶▶", " ▶▶", "  ▶", "   "],
+    "dots":      ["⠁", "⠂", "⠄", "⡀", "⢀", "⠠", "⠐", "⠈"],
+    "bars":      ["▏", "▎", "▍", "▌", "▋", "▊", "▉", "█", "▉", "▊", "▋", "▌", "▍", "▎"],
+    "moon":      ["🌑", "🌒", "🌓", "🌔", "🌕", "🌖", "🌗", "🌘"],
+    "clock":     ["🕐", "🕑", "🕒", "🕓", "🕔", "🕕", "🕖", "🕗", "🕘", "🕙", "🕚", "🕛"],
+    "blink_question": ["❓", "❔"],
+    "static":    [""]
+  },
+
+  "tool_icons": {
+    "Bash":            "$",
+    "Edit":            "✎",
+    "Write":           "✎",
+    "MultiEdit":       "✎",
+    "NotebookEdit":    "✎",
+    "Read":            "…",
+    "Grep":            "⌕",
+    "Glob":            "⌕",
+    "Task":            "❖",
+    "WebFetch":        "↯",
+    "WebSearch":       "⌕",
+    "AskUserQuestion": "?"
+  },
+
+  "default_tool_icon": "✻"
+}
