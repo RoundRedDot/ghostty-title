@@ -440,7 +440,7 @@ title = "anything"     # ⚠️ 写了这行 = 锁死标题，OSC 全失效
 {
   "hooks": [{
     "type": "command",
-    "command": "python3 '/Users/luopeihuan/.claude/hooks/ghostty-title/hook.py' <EventName>",
+    "command": "python3 '/Users/xxx/.claude/hooks/ghostty-title/hook.py' <EventName>",
     "timeout": 3
   }]
 }
